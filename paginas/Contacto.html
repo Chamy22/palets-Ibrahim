@@ -1,78 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <link rel="icon" href="../imagenes/logo-sin-fondo.png">
   <link href="../style.css" rel="stylesheet" type="text/css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Palets Veron</title>
 </head>
-<body>
+
+<body >
   <header class="fondoHeader">
-        <!--cabecera de mi sitio-->
-  <!--   <a href="../index.html"><img src="../imagenes/logo_PV.jpg" alt="logo"></a>
+    <!--cabecera de mi sitio-->
+    <!--   <a href="../index.html"><img src="../imagenes/logo_PV.jpg" alt="logo"></a>
     <h1>Palets Veron</h1> -->
-    <a href ="../index.html"><img src="../imagenes/logo-sin-fondo.png" alt="logo"></a>
+    <a class="logo" href="../index.html"><img src="../imagenes/logo-sin-fondo.png" alt="logo"></a>
     <h1 class="encabezado">Palets Veron</h1>
-    <nav>
+    <nav class="nav">
       <ul class="navegador">
-          <li><a href="./Info Palets.html"> Info Palets</a></li>
-          <li> <a href="./Productos.html">Productos</a>   
-          </li>
-          <li><a href="./Quienes somos.html">Quienes somos</a>
-          </li>
-          <li><a href="./Contacto.html">Contacto</a></li>
-        </ul>
+        <li><a href="./Info Palets.html"> Info Palets</a></li>
+        <li> <a href="./Productos.html">Productos</a>
+        </li>
+        <li><a href="./Quienes somos.html">Quienes somos</a>
+        </li>
+        <li><a href="./Contacto.html">Contacto</a></li>
+      </ul>
     </nav>
-      </header>
-      <main>
-        <section>
-          <!--formulario presupuesto-->
-          <div>
-            <form>
-              <label for="fname">Nombre y Apellido</label><br>
-              <input type="text" id="fname" name="fname" placeholder="Nombre y Apellido"><br>
-              <label for="mail"> Email  
-              </label><br>
-              <input type="text" id="mail" name="mail" placeholder="Email"><br>
-              <label for="tel"> Teléfono </label><br>
-              <input type="tel" id="tel" name="Telefono" placeholder="(Cód. de área) Número"><br>
-              <label for="lname">Consulta </label><br>
-              <textarea type="text" id="textarea" name="textarea"
-              placeholder="Consulta"><br>
-            </form><br>
-            <button>
-              Enviar
-            </button>
+  </header>
+  <main class="mainContacto">
+    <section>
+      <!--formulario presupuesto-->
+      <div class= "contenedor">
+        <form>
+          <div class="nombreApellido" >
+            <label class="nombre" for="fname">Nombre y Apellido</label>
+            <input class="cuadroNombre"type="text" id="fname" name="fname" placeholder="Nombre y Apellido">
           </div>
-        </section>
-      </main>
-        <footer class="fondoFooter">
-          <ul class="redes">
-            <li class="redesInline"><a href="https://www.facebook.com/mipagina"target="_blank">Facebook</a>
-            </li>
-            <li class="redesInline"><a href="https://www.Instagram.com/mipagina"target="_blank">Instagram</a>
-            </li>
-            <li class="redesInline"><a href="https://www.linkedin.com/mipagina"target="_blank">Linkedin</a>
-            </li>
-            <li class="redesInline">
-              <a href="https://www.whatsapp.com/mipagina"target="_blank"> whatsapp</a>
-            </li>
-        </ul>
-        <section><br>
-        <!-- numero y direccion  -->
-        <p>
-          Cnel. Molinedo 1599, Piñeyro, Buenos Aires
-       </p>
-       <p>paletsveron@gmail.com</p>
-       <p>11-3344-1482</p>
-       <section>
+          <div class="contenedorMail">
+            <label class="mail" for="mail"> Email
+            </label>
+            <input class="cuadroMail" type="text" id="mail" name="mail" placeholder="Email">
+          </div>
+          <div class="contenedorTelefono">
+            <label class="telefono" for="tel"> Teléfono </label>
+            <input class="cuadroTelefono" type="tel" id="tel" name="Telefono" placeholder="(Cód. de área) Número">
+          </div>
+          <div class="contenedorConsulta">
+            <label class="consulta" for="lname">Consulta </label>
+            <textarea class="cuadroConsulta" type="text" id="textarea" name="textarea" placeholder="Consulta"></textarea>
+         <!--  </div> -->
+        </form>
+        <button class="boton">
+          Enviar
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer class="fondoFooter">
+    <ul class="redes">
+      <li class="redesInline"><a href="https://www.facebook.com/mipagina" target="_blank"><img
+            src="../imagenes/facebook-logo.png" alt="facebook" height="70" width="70"></a>
+      </li>
+      <li class="redesInline"><a href="https://www.Instagram.com/mipagina" target="_blank"><img
+            src="../imagenes/logo-instagram-sin-fondo.png" alt="instagram" width="25" height="30"></a>
+      </li>
+      <li class="redesInline"><a href="https://www.linkedin.com/mipagina" target="_blank"><img
+            src="../imagenes/linkedin-logo.png" alt="linkedin" width="50" height="30"></a>
+      </li>
+      <li class="redesInline">
+        <a href="https://www.whatsapp.com/mipagina" target="_blank"><img src="../imagenes/whatsapp-logo.png"
+            alt="whatsapp" width="50" height="30"></a>
+      </li>
+    </ul>
+    <section>
+      <!-- numero y direccion  -->
+      <p>
+        Cnel. Molinedo 1599, Piñeyro, Buenos Aires
+      </p>
+      <p>paletsveron@gmail.com</p>
+      <p>11-3344-1482</p>
+      <section>
         <div>
           <!-- Mapa -->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.8606036450847!2d-58.4030494412781!3d-34.66174309999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb6241937f81%3A0xc3108297974d6312!2sCnel.%20Molinedo%201599%2C%20C1437%20Pi%C3%B1eyro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1655682457419!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.8606036450847!2d-58.4030494412781!3d-34.66174309999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb6241937f81%3A0xc3108297974d6312!2sCnel.%20Molinedo%201599%2C%20C1437%20Pi%C3%B1eyro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1655682457419!5m2!1ses-419!2sar"
+            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
-    </footer>
+  </footer>
 </body>
+
 </html>
