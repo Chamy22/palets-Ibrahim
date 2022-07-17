@@ -4,6 +4,9 @@
   /* height: auto; */
   /* max-width: auto; */
 }
+.navbar {
+  background-color: greenyellow;
+}
 
 .logo{
   grid-column: 1/3;
