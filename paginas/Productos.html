@@ -2,7 +2,8 @@
 <html lang="es">
 
 <head>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="icon" href="../imagenes/logo-sin-fondo.png">
   <link href="../style.css" rel="stylesheet" type="text/css">
   <meta charset="UTF-8">
@@ -12,9 +13,9 @@
 </head>
 
 <body>
-  <header class="fondoHeader">
-    <!--cabecera de mi sitio-->
-    <a class="logo" href="../index.html"><img src="../imagenes/logo-sin-fondo.png" alt="logo"></a>
+  <!--   <header class="fondoHeader"> -->
+  <!--cabecera de mi sitio-->
+  <!--     <a class="logo" href="../index.html"><img src="../imagenes/logo-sin-fondo.png" alt="logo"></a>
     <h1 class="encabezado">Palets Veron</h1>
     <nav class="nav">
       <ul class="navegador">
@@ -25,18 +26,47 @@
         </li>
         <li><a href="./Contacto.html">Contacto</a></li>
       </ul>
+    </nav> -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-rgb greenyellow ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../imagenes/logo-sin-fondo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1 class="encabezado">Palets Veron</h1>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./Info Palets.html">Info Palets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Quienes somos.html">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <main>
     <section>
       <h2 class="tituloProducto">Palets de Madera:Medida y tipos</h2>
-      <h3 class="subtituloProducto">Estos son algunos ejemplos de palets recuperados tratados para que vuelvan a estar como el primer día.
+      <h3 class="subtituloProducto">Estos son algunos ejemplos de palets recuperados tratados para que vuelvan a estar
+        como el primer día.
         Le garantizamos un suministro constante de cualquiera de ellos.</h3>
     </section>
     <section class="paletEuro">
       <img src="../imagenes/palet-80.png" alt="Palet de 80" width="250" height="200" />
       <h2>Palet europeo</h2>
-      <p class="descripcionEuro">Es el más común y sus medidas son de 1200 x 800 mm. Es el más común en Europa porque está adaptado a las
+      <p class="descripcionEuro">Es el más común y sus medidas son de 1200 x 800 mm. Es el más común en Europa porque
+        está adaptado a las
         medidas de las cajas de los remolques, que tienen un ancho de 2400 mm. Con esta medida de palé se pueden poner a
         lo ancho de la caja dos palés en una dirección o tres en la otra</p>
       <a href="./Contacto.html"><button>Solicitar presupuesto</button></a>
@@ -44,14 +74,16 @@
     <section class="paletAmericano">
       <img src="../imagenes/palet-100x120.png" alt="palet de 120x100" width="250" height="200">
       <h2>Palet americano</h2>
-      <p class="descripcionAmericano">Conocido también como palet universal, tiene unas medidas de 1200 x 1000 mm. y es comúnmente utilizado para el
+      <p class="descripcionAmericano">Conocido también como palet universal, tiene unas medidas de 1200 x 1000 mm. y es
+        comúnmente utilizado para el
         transporte de productos líquidos.</p>
       <a href="./Contacto.html"><button>Solicitar presupuesto</button></a>
     </section>
     <section class="paletIndustrial">
       <img src="../imagenes/palet-120x120.png" alt="Palet 120x120" width="250" height="200">
       <h2>Palet industrial</h2>
-      <p class="descripcionIndustrial">Particularmente utilizados en el sector químico, tienen unas medidas de 800x1200mm, aunque también podemos
+      <p class="descripcionIndustrial">Particularmente utilizados en el sector químico, tienen unas medidas de
+        800x1200mm, aunque también podemos
         encontrar los palets de medidas de 1000×1200 mm.</p>
       <a href="./Contacto.html"><button>Solicitar presupuesto</button></a>
 
@@ -82,8 +114,12 @@
       <p>11-3344-1482</p>
     </section>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
