@@ -1,12 +1,11 @@
 * {
   margin: 0;
   justify-content: space-between;
-  /* height: auto; */
-  /* max-width: auto; */
 }
 .navbar {
-  background-color: greenyellow;
-}
+  background-image: linear-gradient(to right, green, greenyellow, yellow );
+  }
+
 
 .logo{
   grid-column: 1/3;
@@ -26,6 +25,15 @@
     flex: auto;
     flex-direction: column-reverse;
     place-self: flex-end;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+@keyframes aparecer{
+  0%{ opacity: 0;}
+  100%{
+    opacity: 1;
+  }
 }
 .collapse {
   justify-content: end;
@@ -36,7 +44,6 @@
 .navegador {
   font-family: cursive;
   justify-content: end;
-  /* display: flex; */
   height: 55px;
   margin: 0;
 }
@@ -66,8 +73,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-
-
 }
 
 .redesInline {
@@ -80,10 +85,9 @@
 }
 
 .fondoFooter {
-  background-color: greenyellow;
   display: flow-root;
+  background-image: linear-gradient(to left, green,green, greenyellow , yellow);
 }
-
 
 .imagen-galpon {
   background-image: url(./imagenes/galpon-provisorio.jpg);
@@ -96,7 +100,6 @@
 /* Header */
 .fondoHeader {
    background-color: greenyellow;
- /*   display: flex; */
    display: grid;
 }
 @media screen and (max-width: 780px) {
@@ -105,12 +108,7 @@
   }
   
 }
-/* @media screen and (min-width:750px) {
-  .fondoHeader {
-    background-color: greenyellow;
-  }
-  
-} */
+
 @media screen and (max-width: 780px) {
   .navegador {
     flex-direction: column;
@@ -126,10 +124,6 @@
     background-color: greenyellow;
   }
 }
-/* @media screen and (min-width:310px){
-  .fondoFooter {
-    background-color: greenyellow;}
-} */
 /* Index */
 
 @media screen and (max-width: 350px){
@@ -137,14 +131,12 @@
     width: 200px;
     margin-left: 0%;
   }
-
 }
 
 @media screen and (max-width: 350px) {
   .imagenPaletsIndex {
     max-width: 200px;
   }
-
 }
 /* Productos */
 .tarjetas{
@@ -229,7 +221,6 @@ grid-column: 1/2;
   border: solid 1px;
   align-items: center;
 grid-column: 1/2;
-
 }
 .cuadroTelefono{
   border: solid 1px;
@@ -239,7 +230,6 @@ grid-column: 1/2;
   display: grid;
   grid-template-columns: 150px 15px 150px;
   grid-template-rows: 40px 40px 40px;
-
 }
 .consulta{
   border: solid 1px;
@@ -257,7 +247,6 @@ grid-column: 1/2;
 }
 .boton:hover{
   transform: scale(2)
-
 }
 
 /* Productos */
@@ -285,5 +274,4 @@ grid-column: 1/2;
   text-align: inherit;
   font-size: larger;
   border: solid 1px black
-
 }
