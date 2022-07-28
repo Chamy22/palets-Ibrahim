@@ -1,0 +1,18 @@
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+  }
+  .redesInline {
+    display: inline;
+    text-align: center;
+  }
+  .infoPagina {
+    background-color: bisque;
+  }
+  .fondoFooter {
+    display: flow-root;
+    background-image: linear-gradient(to left, green,green, greenyellow , yellow);
+  }
