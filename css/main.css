@@ -62,6 +62,20 @@
 .infoPagina {
   background-color: bisque; }
 
+/* seguir revisando para que funcione la imagen */
+/*   @media screen and (max-width: 350px){
+    .imagenPaletsApilados {
+      width: 100px;
+      /* margin-left: 0%; */
+/*      text-align: $textoPrimario;
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+    .imagenPaletsIndex {
+      max-width: 200px;
+    }
+  } */
 .redes {
   display: flex;
   justify-content: center;
@@ -79,3 +93,70 @@
 .fondoFooter {
   display: flow-root;
   background-image: linear-gradient(to left, green, green, greenyellow, yellow); }
+
+.mainContacto {
+  display: flex;
+  justify-content: center; }
+
+.contenedor, .contenedorTelefono, .contenedorMail, .nombreApellido, .contenedorConsulta {
+  display: grid;
+  grid-template-columns: 150px 15px 150px; }
+
+.contenedorConsulta {
+  grid-template-rows: 40px 40px 40px; }
+
+.infoContenedor, .nombre, .mail, .telefono, .consulta {
+  border: solid 1px;
+  align-items: center; }
+
+.nombre {
+  grid-column: 1/2; }
+
+.mail {
+  grid-column: 1/2; }
+
+.telefono {
+  grid-column: 1/2; }
+
+.consulta {
+  grid-column: 1/2; }
+
+.cuadro, .cuadroNombre, .cuadroMail, .cuadroTelefono, .cuadroConsulta {
+  border: solid 1px;
+  grid-column: 3/4; }
+
+.boton {
+  grid-column: 1/4;
+  transition: all 0.25s; }
+
+.boton:hover {
+  transform: scale(2); }
+
+.tarjetas {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center; }
+
+.botonTarjeta {
+  display: flex;
+  justify-content: center;
+  border: solid 5px greenyellow;
+  color: black; }
+
+.card-body {
+  background-color: blanchedalmond; }
+
+.descripcion, .descripcionIndustrial, .descripcionAmericano, .descripcionEuro {
+  text-align: inherit;
+  font-size: larger;
+  border: solid 1px black; }
+
+.tituloProducto {
+  font-size: 25px;
+  text-align: center; }
+
+.subtituloProducto {
+  font-size: 20px; }
+
+.paletAmericano {
+  flex-direction: row-reverse; }

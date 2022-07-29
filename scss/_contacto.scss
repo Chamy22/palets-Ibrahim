@@ -1,0 +1,81 @@
+.mainContacto {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 150px 15px 150px;
+}
+
+.contenedorTelefono {
+    @extend .contenedor;
+}
+
+.contenedorMail {
+    @extend .contenedor;
+}
+
+.nombreApellido {
+    @extend .contenedor;
+}
+
+.contenedorConsulta {
+    @extend .contenedor;
+    grid-template-rows: 40px 40px 40px;
+}
+
+.infoContenedor {
+    border: solid 1px;
+    align-items: center;
+}
+
+.nombre {
+    @extend .infoContenedor;
+    grid-column: 1/2;
+}
+
+.mail {
+    @extend .infoContenedor;
+    grid-column: 1/2;
+}
+
+.telefono {
+    @extend .infoContenedor;
+    grid-column: 1/2;
+}
+
+.consulta {
+    @extend .infoContenedor;
+    grid-column: 1/2;
+}
+
+.cuadro {
+    border: solid 1px;
+    grid-column: 3/4;
+}
+
+.cuadroNombre {
+    @extend .cuadro;
+}
+
+.cuadroMail {
+    @extend .cuadro;
+}
+
+.cuadroTelefono {
+    @extend .cuadro;
+}
+
+.cuadroConsulta {
+    @extend .cuadro;
+}
+
+.boton {
+    grid-column: 1/4;
+    transition: all 0.25s;
+}
+
+.boton:hover {
+    transform: scale(2)
+}
