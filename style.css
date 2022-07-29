@@ -125,7 +125,7 @@
 }
 /* Index */
 
-@media screen and (max-width: 350px){
+/* @media screen and (max-width: 350px){
   .imagenPaletsApilados {
     width: 200px;
     margin-left: 0%;
@@ -136,9 +136,9 @@
   .imagenPaletsIndex {
     max-width: 200px;
   }
-}
+} */
 /* Productos */
-.tarjetas{
+/* .tarjetas{
   display: flex;
   flex-flow: wrap;
   justify-content: center;
@@ -152,7 +152,7 @@
 .card-body{
   background-color: blanchedalmond
 }
-
+ */
 @media screen and (min-width: 768px) {
   .paletEuro {
     display: flex;
@@ -174,103 +174,4 @@
     display: flex;
     align-items: center;
   }
-}
-
-/* Contacto */
-.mainContacto{
-  display: flex;
-  justify-content: center;
-}
-.contenedor {
-  display: grid;
-  grid-template-columns: 150px 15px 150px;
-}
-
-.nombreApellido{
- display: grid;
-  grid-template-columns: 150px 15px 150px;
-}
-.nombre {
-  border: solid 1px;
-  align-items: center;
-grid-column: 1/2;
-}
-.cuadroNombre {
-  border: solid 1px;
-  grid-column: 3/4;
-}
-.contenedorMail{
-  display: grid;
-  grid-template-columns: 150px 15px 150px;
-}
-.mail{
-  border: solid 1px;
-  align-items: center;
-grid-column: 1/2;
-}
-.cuadroMail{
-  border: solid 1px;
-  grid-column: 3/4;
-}
-.contenedorTelefono{
-  display: grid;
-  grid-template-columns: 150px 15px 150px;
-}
-.telefono{
-  border: solid 1px;
-  align-items: center;
-grid-column: 1/2;
-}
-.cuadroTelefono{
-  border: solid 1px;
-  grid-column: 3/4;
-}
-.contenedorConsulta{
-  display: grid;
-  grid-template-columns: 150px 15px 150px;
-  grid-template-rows: 40px 40px 40px;
-}
-.consulta{
-  border: solid 1px;
-  align-items: center;
-grid-column: 1/2;
-
-}
-.cuadroConsulta{
-  border: solid 1px;
-  grid-column: 3/4;
-}
-.boton{
-  grid-column: 1/4;
-  transition: all 0.25s;
-}
-.boton:hover{
-  transform: scale(2)
-}
-
-/* Productos */
-.tituloProducto{
-  font-size: 25px;
-  text-align: center;
-}
-.subtituloProducto{
-  font-size: 20px;
-}
-.descripcionEuro{
-  text-align: inherit;
-  font-size: larger;
-  border: solid 1px black
-}
-.paletAmericano{
-  flex-direction: row-reverse;
-}
-.descripcionAmericano{
-  text-align: inherit;
-  font-size: larger;
-  border: solid 1px black
-}
-.descripcionIndustrial{
-  text-align: inherit;
-  font-size: larger;
-  border: solid 1px black
 }
