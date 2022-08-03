@@ -1,0 +1,7 @@
+Head: Agregue los keywords "palets,tarima,envio,recoleccion,reparacion,reciclaje,medioambiente,madera,compra, venta"
+      Agregue Description.
+      Corregi la ruta de "./css/main.css" antes lo tenia dentro de la carpeta "scss".
+Index: Cambien con media queries la imagen para que sea responsive.
+Producto: Coloque las card para los productos.
+Quienes somos: Saque la imagen de fondo para colocar otra de mejor calidad
+ 
