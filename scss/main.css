@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-image: linear-gradient(to right, green, greenyellow, yellow);
+}
+
+.navegador {
+  font-family: cursive;
+  justify-content: end;
+  height: 55px;
+  margin: 0;
+}
+
+.nav {
+  grid-column: 6/8;
+}
+
+.collapse {
+  justify-content: end;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.encabezado {
+  text-align: center;
+  color: rgb(2, 127, 230);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2;
+  grid-column: 3;
+  flex: auto;
+  flex-direction: column-reverse;
+  place-self: flex-end;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.logo {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.subtitulo {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagenPaletsApilados {
+  margin-left: 20vh;
+}
+
+.textoIndex {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.infoPagina {
+  background-color: bisque;
+}
+
+@media screen and (max-width: 680px) {
+  .imagenPaletsApilados {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 680px) {
+  .imagenPaletsIndex {
+    max-width: 200px;
+  }
+}
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+}
+
+.redesInline {
+  display: inline;
+  text-align: center;
+}
+
+.infoPagina {
+  background-color: bisque;
+}
+
+.fondoFooter {
+  display: flow-root;
+  background-image: linear-gradient(to left, green, green, greenyellow, yellow);
+}
+
+.datos {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 450px) {
+  .datos {
+    display: block;
+  }
+}
+.contenedor, .contenedorConsulta, .nombreApellido, .contenedorMail, .contenedorTelefono {
+  display: grid;
+  grid-template-columns: 150px 15px 150px;
+}
+
+.contenedorConsulta {
+  grid-template-rows: 40px 40px 40px;
+}
+
+.infoContenedor, .consulta, .telefono, .mail, .nombre {
+  border: solid 1px;
+  align-items: center;
+}
+
+.nombre {
+  grid-column: 1/2;
+}
+
+.mail {
+  grid-column: 1/2;
+}
+
+.telefono {
+  grid-column: 1/2;
+}
+
+.consulta {
+  grid-column: 1/2;
+}
+
+.cuadro, .cuadroConsulta, .cuadroTelefono, .cuadroMail, .cuadroNombre {
+  border: solid 1px;
+  grid-column: 3/4;
+}
+
+.boton {
+  grid-column: 1/4;
+  transition: all 0.25s;
+}
+
+.boton:hover {
+  transform: scale(2);
+}
+
+.mainContacto {
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjetas {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.botonTarjeta {
+  display: flex;
+  justify-content: center;
+  border: solid 5px greenyellow;
+  color: black;
+}
+
+.card-body {
+  background-color: blanchedalmond;
+}
+
+.descripcion, .descripcionEuro, .descripcionAmericano, .descripcionIndustrial {
+  text-align: inherit;
+  font-size: larger;
+  border: solid 1px black;
+}
+
+.tituloProducto {
+  font-size: 25px;
+  text-align: center;
+}
+
+.subtituloProducto {
+  font-size: 20px;
+}
+
+.paletAmericano {
+  flex-direction: row-reverse;
+}
+
+.tamanioDePantalla {
+  height: 100vh;
+}
+
+.TamanioDeMain {
+  height: 63vh;
+}
+
+.imgGalpon {
+  height: 35vh;
+}/*# sourceMappingURL=main.css.map */
