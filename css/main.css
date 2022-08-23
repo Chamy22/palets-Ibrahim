@@ -86,6 +86,7 @@
 
 .infoPagina {
   background-color: bisque;
+  height: 63vh;
 }
 
 @media screen and (max-width: 680px) {
@@ -122,11 +123,16 @@
   background-image: linear-gradient(to left, green, green, greenyellow, yellow);
 }
 
-.mainContacto {
+.datos {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
+@media screen and (max-width: 450px) {
+  .datos {
+    display: block;
+  }
+}
 .contenedor, .contenedorConsulta, .nombreApellido, .contenedorMail, .contenedorTelefono {
   display: grid;
   grid-template-columns: 150px 15px 150px;
@@ -171,6 +177,13 @@
   transform: scale(2);
 }
 
+.mainContacto {
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .tarjetas {
   display: flex;
   flex-flow: wrap;
@@ -205,4 +218,16 @@
 
 .paletAmericano {
   flex-direction: row-reverse;
+}
+
+.tamanioDePantalla {
+  height: 100vh;
+}
+
+.TamanioDeMain {
+  height: 63vh;
+}
+
+.imgGalpon {
+  height: 35vh;
 }/*# sourceMappingURL=main.css.map */

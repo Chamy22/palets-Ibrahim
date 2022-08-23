@@ -16,3 +16,10 @@
     display: flow-root;
     background-image: linear-gradient(to left, green,green, greenyellow , yellow);
   }
+  .datos {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (max-width:450px){
+    .datos {display: block;}
+  }
